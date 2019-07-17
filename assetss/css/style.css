@@ -3,25 +3,18 @@
 body {
   background: #fafafa;
 }
-.title {
-  font-size: 24px;
-  letter-spacing: 2px;
-  line-height: 1.8;
-  margin-bottom: 16px;
 
+/* 追加 */
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.lead {
-  margin-bottom: 16px;
-}
-
-.list {
-  background: #fff;
-  border: 1px solid #eee;
-  border-radius: 3px;
+/* 追加 */
+ul, ol {
   list-style: none;
-  padding: 24px;
 }
+
 
 .container {
   max-width: 1300px;
@@ -39,7 +32,6 @@ img {
   background: center/cover url(/assetss/images/hero_pc.jpg);
   padding: 280px 0;
   color: #fff;
-  margin-bottom: 24px;
 }
 .hero__message {
   font-size: 40px;
@@ -57,7 +49,6 @@ img {
   background: none;
   display: inline-block;
   color: #fff;
-  text-decoration: none;
 }
 
 .button--black {
@@ -88,10 +79,17 @@ img {
   display: flex;
   list-style: none;
 }
+
+
+@media screen and (max-width: 640px) {
+  .gnav {
+    display: none;
+  }
+}
+
+
 .gnav__link {
   padding: 0 8px;
-  text-decoration: none;
-  color: inherit;
   font-size: 13px;
   position: relative;
   line-height: 56px;
@@ -123,17 +121,33 @@ img {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 640px) {
+  .footer {
+    display: block;
+  }
+}
+
 .footer-nav {
   display: flex;
   list-style: none;
 }
+
+@media screen and (max-width: 640px) {
+  .footer-nav {
+    display: block;
+    line-height: 1.8; /* 追加 */
+    margin-bottom: 16px; /* 追加 */
+  }
+}
+
 .footer-nav__item + .footer-nav__item:before {
   content: "|";
   margin: 0 8px;
 }
-.footer-nav__link {
-  text-decoration: none;
-  color: inherit;
+@media screen and (max-width: 640px) {
+  .footer-nav__item + .footer-nav__item:before {
+    display: none;
+  }
 }
 
 
@@ -170,6 +184,14 @@ img {
   line-height: 1;
   letter-spacing: 2px;
 }
+
+@media screen and (max-width: 640px) {
+  .heading__main {
+    font-size: 24px;
+  }
+}
+
+
 .heading__sub {
   font-size: 13px;
   font-weight: normal;
@@ -182,6 +204,13 @@ img {
   max-width: 640px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 640px) {
+  .profile {
+    display: block;
+  }
+}
+
 .profile__photo {
   border-radius: 50%;
   width: 160px;
@@ -189,6 +218,13 @@ img {
   margin-right: 24px;
   background: center/cover url(/assetss/images/profile.jpg);
 }
+
+@media screen and (max-width: 640px) {
+  .profile__photo {
+    margin: 0 auto 16px;
+  }
+}
+
 .profile__body {
   flex: 1;
 }
@@ -198,6 +234,13 @@ img {
   line-height: 1;
   font-weight: bold;
 }
+
+@media screen and (max-width: 640px) {
+  .profile__name {
+    text-align: center;
+  }
+}
+
 .profile__name rt {
   font-weight: normal;
   color: rgba(0, 0, 0, .6);
@@ -242,3 +285,10 @@ img {
   line-height: 1.8;
 }
 
+
+
+@media screen and (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
