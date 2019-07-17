@@ -1,0 +1,13 @@
+# Editor configuration, see https://editorconfig.org
+root = true
+
+[*] # どのファイルにルールを適用するか（*の場合すべてのファイル）
+charset = utf-8
+indent_style = space # インデントをタブかスペースから選ぶ（通常はスペース）
+indent_size = 2 # インデントサイズ（通常は2）
+insert_final_newline = true # 最終行に空行を追加するか（好み）
+trim_trailing_whitespace = true # 行末の不要なスペースを消すか（true推奨）
+
+[*.md] # .md拡張子のファイルにこのルールを適用させる
+max_line_length = off
+trim_trailing_whitespace = false
