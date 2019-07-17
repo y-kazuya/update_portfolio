@@ -2,8 +2,19 @@
 <html lang="ja">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144005555-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144005555-1');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
 
   <title>mymyPortfolio</title>
   <meta name="description" content="初心者エンジニアのポートフォリオサイトですよ">
@@ -170,21 +181,23 @@
 
 
   <div class="section" id="contact">
-    <h2 class="heading">
-      <span class="heading__main">CONTACT</span>
-      <span class="heading__sub">お問い合わせ</span>
-    </h2>
-    <form class="contact">
-      <label for="name" class="contact__label">名前<span class="required">*</span></label>
-      <input type="text" name="name" id="name" class="input" autocomplete="name" required>
-      <label for="email" class="contact__label">メールアドレス<span class="required">*</span></label>
-      <input type="email" name="email" id="email" class="input" required>
-      <label for="body" class="contact__label">内容<span class="required">*</span></label>
-      <textarea name="body" id="body" class="input input--textarea" required></textarea>
-      <div class="contact__footer">
-        <button type="submit" class="button button--sm button--black">送信</button>
-      </div>
-    </form>
+    <div class="container">
+      <h2 class="heading">
+        <span class="heading__main">CONTACT</span>
+        <span class="heading__sub">お問い合わせ</span>
+      </h2>
+      <form class="contact">
+        <label for="name" class="contact__label">名前<span class="required">*</span></label>
+        <input type="text" name="name" id="name" class="input" autocomplete="name" required>
+        <label for="email" class="contact__label">メールアドレス<span class="required">*</span></label>
+        <input type="email" name="email" id="email" class="input" required>
+        <label for="body" class="contact__label">内容<span class="required">*</span></label>
+        <textarea name="body" id="body" class="input input--textarea" required></textarea>
+        <div class="contact__footer">
+          <button type="submit" class="button button--sm button--black">送信</button>
+        </div>
+      </form>
+    </div>
   </div>
 
   <footer class="footer">
